@@ -1,0 +1,18 @@
+[color]
+    ui = always
+    diff = auto
+    status = auto
+    branch = auto
+    interactive = auto
+[push]
+    default = simple
+[alias]
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+[merge]
+    tool = p4mergetool
+[mergetool "p4mergetool"]
+    cmd = /usr/local/bin/p4merge $PWD/$BASE $PWD/$REMOTE $PWD/$LOCAL $PWD/$MERGED
+    trustExitCode = false
+[mergetool]
+    keepBackup = false

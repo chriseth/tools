@@ -1,0 +1,2 @@
+#!/bin/sh
+git fetch -f ethereum refs/pull/"$1"/head:pr
