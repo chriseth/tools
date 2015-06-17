@@ -248,7 +248,7 @@ git_bash_prompt_get_git_info () {
     output="$branch"
 
     # Add on the git status
-    output="$output$(git_bash_prompt_get_git_status)"
+    output="$output $(git_bash_prompt_get_git_status)"
 
     # Echo our output
     echo "$output"
