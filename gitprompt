@@ -59,6 +59,7 @@ fi
 
 # Define the default prompt terminator character '$'
 if [[ "$UID" == 0 ]]; then
+  git_bash_prompt_symbol_color="$(tput setaf 1)"
   git_bash_prompt_symbol="#"
 else
   git_bash_prompt_symbol="⚡"
